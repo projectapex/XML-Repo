@@ -43,12 +43,16 @@ Try to separate your description into three different sections, if possible:
 2.  **Gamemode**
 
     What game mode is the map? Rage, Blitz, DTM, Etc...
+    
+3.  **Map Specific XML Settings**
+    
+    What special regions need to be protected, should TNT block damage be disabled, Etc...
 
-3.  **Authors**
+4.  **Authors**
 
     Who made the map? Include any relevant contributors.
 
-4.  **Extra Information**
+5.  **Extra Information**
 
     Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
 
