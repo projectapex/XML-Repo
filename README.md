@@ -1,14 +1,16 @@
 # Project Apex XML Repo
 
-This is a public repository for the creation and error checking of XML files.
+This is a public repository for the creation and error checking of XML files. Feel free to contribute by either submitting a pull request, or requesting to become an official contributor on the [forum thread](https://oc.tc/forums/topics/51d9d48dba608720d8007c80).
 
 ### Important:
 
-If you want an XML making for your map. File an Issue using our [Issue Tracker][]
+If you want an XML file made for your map file an Issue using our [Issue Tracker][]
 
 ### Do:
 
--   Submit your requests for an XML to be made.
+-   Submit your requests for an XML to be made
+
+-   Submit a link to your forum topic
 
 -   Submit a download link to a map
 
@@ -16,9 +18,9 @@ If you want an XML making for your map. File an Issue using our [Issue Tracker][
 
 ### Do not:
 
--   Expect your request to be fulfilled instantly. We are real people, and have real lives
+-   Expect your request to be fulfilled instantly; we are real people, and have real lives
 
--   Spam your request for a map XML to be written, it will decrease the chances that we will actually do it
+-   Spam your request for a map XML to be written; it will decrease the chances that we will actually do it
 
 ## Formatting
 
@@ -34,25 +36,25 @@ Provide a brief summary of the map. Your title should allow users browsing the r
 
 ### Description
 
-Try to separate your description into three different sections, if possible:
+Try to separate your description into four different sections:
 
-1.  **Map Name**
+1.  **Basic Information**
 
-    What is the Map's name?
+- Map name
+- Link to download
+- Link to forum post
+- Pictures
+- Gamemode
 
-2.  **Gamemode**
+2.  **Authors**
 
-    What game mode is the map? Rage, Blitz, DTM, Etc...
+    Who made the map? Include any relevant contributors.
     
 3.  **Map Specific XML Settings**
     
     What special regions need to be protected, should TNT block damage be disabled, Etc...
 
-4.  **Authors**
-
-    Who made the map? Include any relevant contributors.
-
-5.  **Extra Information**
+4.  **Extra Information**
 
     Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
 
