@@ -1,33 +1,61 @@
-# Posting an Issue for a XML to be done:
--Follow the formating guide in the readme.
+# Project Apex XML Repo
 
+This is a public repository for the creation and error checking of XML files. Feel free to contribute to the repository, but read the [contributing manual](https://github.com/projectapex/XML-Repo/blob/master/CONTRIBUTING.md) first.
 
+### Important:
 
-# Contributing to the Project Apex XML Repo
-
-This is a public repository for the creation and error checking of XML files. Feel free to contribute by submitting a pull request.
-If you have any questions, or request, do not hesitate to contact one of the repository staff, listed at the bottom of this page.
+If you want an XML file made for your map file an Issue using our [Issue Tracker][]
 
 ### Do:
-- Pick a valid unassigned XML request to complete
 
-- Comment on the request, saying that you will submit a pull request with it
+-   Submit your requests for an XML to be made
 
-- Make a nicely formatted pull request
+-   Submit a link to your forum topic
 
-### Don't:
-- Pick an assigned XML request
+-   Submit a download link to a map
 
-- Pick a duplicate XML request
+-   Include pictures with your request *(Within reason, Max of 3!)*
 
-- Pick an invalid XML request
+### Do not:
 
-- Give the XML to the requestee without validation from either i2, nixter1029, or msalihov
+-   Expect your request to be fulfilled instantly; we are real people, and have real lives
 
+-   Spam your request for a map XML to be written; it will decrease the chances that we will actually do it
 
-### Repository staff:
-- i2/island219
+## Formatting
 
-- nixter1029
+It is recommended that issues are formatted using the following template for maximum clarity and readability:
 
-- msalihov
+### Title
+
+Provide a brief summary of the map. Your title should allow users browsing the repo to grasp the gist of your map at a glance.
+
+**Example**:
+
+> Scorched Grove - DTM 75v75 - Eclipsen & i2
+
+### Description
+
+Try to separate your description into four different sections:
+
+1.  **Basic Information**
+
+- Map name
+- Link to download
+- Link to forum post
+- Pictures
+- Gamemode
+
+2.  **Authors**
+
+    Who made the map? Include any relevant contributors.
+    
+3.  **Map Specific XML Settings**
+    
+    What special regions need to be protected, should TNT block damage be disabled, Etc...
+
+4.  **Extra Information**
+
+    Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
+
+  [Issue Tracker]: https://github.com/projectapex/XML-Repo/issues/new
