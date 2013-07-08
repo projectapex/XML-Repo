@@ -43,9 +43,8 @@
         </kit>
     </kits>
     <regions>
-        <rectangle name="main-area" min="-oo,-oo" max="oo,oo"/>
         <apply block="deny-all">
-            <region name="main-area"/>
+            <rectangle name="main-area" min="-oo,-oo" max="oo,oo"/>
         </apply>
     </regions>
     <playable>
