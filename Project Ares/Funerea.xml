@@ -13,8 +13,8 @@ Kill the enemy players as much as you can before time runs out.
         <contributor contribution="Building">kenwin</contributor>
     </contributors>
     <teams>
-        <team color="dark red" max="40">Red Team</team>
-        <team color="blue" max="40">Blue Team</team>
+        <team color="dark red" max="45">Red Team</team>
+        <team color="blue" max="45">Blue Team</team>
     </teams>
     <kits>
         <kit name="spawn">
