@@ -1,61 +1,27 @@
-# Project Apex XML Repo
+# Contributing to the Project Apex XML Repo
 
 This is a public repository for the creation and error checking of XML files. Feel free to contribute by submitting a pull request.
-
-### Important:
-
-If you want an XML file made for your map file an Issue using our [Issue Tracker][]
+If you have any questions, or request, do not hesitate to contact one of the repository staff, listed at the bottom of this page.
 
 ### Do:
+- Pick a valid unassigned XML request to complete
 
--   Submit your requests for an XML to be made
+- Comment on the request, saying that you will submit a pull request with it
 
--   Submit a link to your forum topic
 
--   Submit a download link to a map
+### Don't:
+- Pick an assigned XML request
 
--   Include pictures with your request *(Within reason, Max of 3!)*
+- Pick a duplicate XML request
 
-### Do not:
+- Pick an invalid XML request
 
--   Expect your request to be fulfilled instantly; we are real people, and have real lives
+- Give the XML to the requestee without validation from either i2, nixter1029, or msalihov
 
--   Spam your request for a map XML to be written; it will decrease the chances that we will actually do it
 
-## Formatting
+### Repository staff:
+- i2/island219
 
-It is recommended that issues are formatted using the following template for maximum clarity and readability:
+- nixter1029
 
-### Title
-
-Provide a brief summary of the map. Your title should allow users browsing the repo to grasp the gist of your map at a glance.
-
-**Example**:
-
-> Scorched Grove - DTM 75v75 - Eclipsen & i2
-
-### Description
-
-Try to separate your description into four different sections:
-
-1.  **Basic Information**
-
-- Map name
-- Link to download
-- Link to forum post
-- Pictures
-- Gamemode
-
-2.  **Authors**
-
-    Who made the map? Include any relevant contributors.
-    
-3.  **Map Specific XML Settings**
-    
-    What special regions need to be protected, should TNT block damage be disabled, Etc...
-
-4.  **Extra Information**
-
-    Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
-
-  [Issue Tracker]: https://github.com/projectapex/XML-Repo/issues/new
+- msalihov
