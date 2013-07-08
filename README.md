@@ -1,6 +1,6 @@
 # Project Apex XML Repo
 
-This is a public repository for the creation and error checking of XML files. Feel free to contribute by submitting a pull request.
+This is a public repository for the creation and error checking of XML files. Feel free to contribute to the repository, but read the [contributing manual](https://github.com/projectapex/XML-Repo/edit/master/CONTRIBUTING.md) first.
 
 ### Important:
 
