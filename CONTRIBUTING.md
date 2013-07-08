@@ -8,6 +8,7 @@ If you have any questions, or request, do not hesitate to contact one of the rep
 
 - Comment on the request, saying that you will submit a pull request with it
 
+- Make a nicely formatted pull request
 
 ### Don't:
 - Pick an assigned XML request
