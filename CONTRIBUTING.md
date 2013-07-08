@@ -1,3 +1,9 @@
+# Posting an Issue for a XML to be done:
+
+-Follow the formating guide in the readme.
+
+
+
 # Contributing to the Project Apex XML Repo
 
 This is a public repository for the creation and error checking of XML files. Feel free to contribute by submitting a pull request.
