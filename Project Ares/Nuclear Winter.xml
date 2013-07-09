@@ -6,6 +6,9 @@
     <authors>
         <author contribution="Building, XML">Akorlith</author>
     </authors>
+    <contributors>
+        <contributor contribution="XML">i2</contributor>
+    </contributors>
     <cores material="obsidian" leak="8" name="Reactor">
         <cores team="red">
             <core name="Reactor A">
