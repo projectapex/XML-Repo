@@ -59,3 +59,10 @@ Try to separate your description into four different sections:
     Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
 
   [Issue Tracker]: https://github.com/projectapex/XML-Repo/issues/new
+  
+## Output
+
+Maps written here will typically have an extra contributor added.
+```xml
+<contributor contribution="XML Repo">ProjectApex</contributor>
+```
