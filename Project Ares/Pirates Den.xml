@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<map proto="1.3.0">
+<name>Pirate's Den</name>
+<version>1.0.1</version>
+<objective>Destroy the enemy team's obsidian monument!</objective>
+<authors>
+    <author contribution="Concept and Development">Tywnis</author>
+</authors>
+<rules>
+    <rule>Don't grief or kill your own team!</rule>
+</rules>
+<contributors>
+    <contributor contribution="XML">i2</contributor>
+</contributors>
+<teams>
+    <team color="blue" max="30">blue Team</team>
+    <team color="dark red" max="30">Red Team</team>
+</teams>
+<maxbuildheight>35</maxbuildheight>
+<spawns>
+    <spawn safe="true" team="blue" kit="spawn" yaw="90">
+        <cuboid min="92,4,8" max="96,4,-8"/>
+    </spawn>
+    <spawn safe="true" team="red" kit="spawn" yaw="-90">
+        <cuboid min="-90,4,-8" max="-94,4,8"/>
+    </spawn>
+    <default yaw="0">
+        <cylinder base="1,97,0" radius="1" height="0"/>
+    </default>
+</spawns>
+<kits>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1">bow</item>
+        <item slot="2">stone pickaxe</item>
+        <item slot="3">stone axe</item>
+        <item slot="4" amount="32" damage="2">log</item>
+        <item slot="5" damage="8197">potion</item>
+        <item slot="6" amount="4">water lily</item>
+        <item slot="7" name="`3Trout"amount="32">cooked fish</item>
+        <item slot="28" amount="64">arrow</item>
+        <potion duration="3">heal</potion>
+        <potion duration="7">damage resistance</potion>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <helmet color="0066cc">leather helmet</helmet>
+        <chestplate color="0066cc">leather chestplate</chestplate>
+        <leggings color="0066cc">leather leggings</leggings>
+        <boots color="0066cc">leather boots</boots>
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet color="cd0000">leather helmet</helmet>
+        <chestplate color="cd0000">leather chestplate</chestplate>
+        <leggings color="cd0000">leather leggings</leggings>
+        <boots color="cd0000">leather boots</boots>
+    </kit>
+</kits>
+<itemremove>
+    <item>gold block</item>
+    <item>flint</item>
+</itemremove>
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>bow</tool>
+    <tool>stone pickaxe</tool>
+    <tool>stone axe</tool>
+</toolrepair>
+
+<filters>
+    <filter name="deny-fire-spread">
+        <deny>
+            <block>fire</block>
+        </deny>
+    </filter>
+    <filter name="only-blue" parents="deny-players deny-world">
+        <allow><team>blue</team></allow>
+    </filter>
+    <filter name="only-red" parents="deny-players deny-world">
+        <allow><team>red</team></allow>
+    </filter>
+
+</filters>
+<regions>
+    <!-- Define the whole playable region on the map -->
+    <rectangle name="map" min="-100,64" max="102,-64"/>
+
+    <!-- Prevent both teams from building in their spawns -->
+    <apply block="deny-all" message="You may not build in the team spawn!">
+        <rectangle name="redspawn" min="-76,-64" max="-100,64"/>
+        <rectangle name="bluespawn" min="78,64" max="102,-64"/>
+    </apply>
+    <!-- Stop Red going into Blue's spawn -->
+    <apply enter="only-blue" message="You may not enter the enemy team's base!">
+        <region name="bluespawn"/>
+    </apply>
+    <!-- Stop Blue going into Red's spawn -->
+    <apply enter="only-red" message="You may not enter the enemy team's base!">
+        <region name="redspawn"/>
+    </apply>
+    <!-- Prevent any kind of fire -->
+    <apply block="deny-fire-spread" message="Don't burn down the map!">
+        <region name="map"/>
+    </apply>
+    <!-- Stop players editing the monument platforms -->
+    <apply block="deny-blocks" message="You may not edit the monument platform!">
+        <cuboid name="r-left"min="-52,17,-27" max="-57,17,-32"/>
+        <cuboid name="r-middle" min="-60,17,-3" max="-65,17,2"/>
+        <cuboid name="r-right" min="-52,17,26" max="-57,17,31"/>
+
+        <cuboid name="b-left" min="53,17,26" max="58,17,31"/>
+        <cuboid name="b-middle" min="61,17,-3" max="66,17,2"/>
+        <cuboid name="b-right" min="53,17,-32" max="58,17,-27"/>
+    </apply>
+</regions>
+<playable>
+    <region name="map"/>
+</playable>
+
+<destroyables materials="gold block" completion="100%">
+    <destroyables owner="blue">
+        <destroyable name="Left">
+           <cuboid min="57,22,30" max="54,26,27"/>
+        </destroyable>
+        <destroyable name="Middle">
+           <cuboid min="62,22,1" max="65,26,-1"/>
+        </destroyable>
+        <destroyable name="Right">
+           <cuboid min="54,22,-27" max="57,26,-30"/>
+        </destroyable>
+    </destroyables>
+    <destroyables owner="red">
+        <destroyable name="Left">
+           <cuboid min="-52,22,-30" max="-55,26,-27"/>
+        </destroyable>
+        <destroyable name="Middle">
+           <cuboid min="-60,22,-1" max="-63,26,1"/>
+        </destroyable>
+        <destroyable name="Right">
+           <cuboid min="-52,22,27" max="-55,26,30"/>
+        </destroyable>
+    </destroyables>
+</destroyables>
+
+</map>
