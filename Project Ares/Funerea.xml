@@ -13,13 +13,12 @@
     </authors>
     <!-- Contributors -->
     <contributors>
-        <contributor contribution="XML">i2</contributor>
         <contributor contribution="Building">kenwin</contributor>
     </contributors>
     <!-- Teams -->
     <teams>
-        <team color="dark red" max="45">Red Team</team>
-        <team color="blue" max="45">Blue Team</team>
+        <team color="dark red" max="50">Red Team</team>
+        <team color="blue" max="50">Blue Team</team>
     </teams>
     <!-- Spawn Kit -->
     <kits>
