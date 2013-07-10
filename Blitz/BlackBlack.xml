@@ -64,10 +64,10 @@
             <item slot="5">arrow</item>
         </kit>
         <kit name="middle">
-            <potion duration="60000" amplifier="5">blindness</potion>
-            <potion duration="60000" amplifier="5">confusion</potion>
-            <potion duration="60000" amplifier="69">slow</potion>
-            <potion duration="60000" amplifier="3">jump</potion>
+            <potion duration="60000" amplifier="2">blindness</potion>
+            <potion duration="60000" amplifier="2">confusion</potion>
+            <potion duration="60000" amplifier="1">slow</potion>
+            <potion duration="60000" amplifier="2">jump</potion>
         </kit>
     </kits>
     <killreward>
