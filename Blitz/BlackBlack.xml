@@ -11,7 +11,7 @@
         <author>nixter1029</author>
     </authors>
     <rules>
-        <rule>Do not block the victory monument</rule>
+        <rule>Do not black the victory monument</rule>
     </rules>
     <teams>
         <team color="red" max="5">Red Team</team>
@@ -124,7 +124,7 @@
         <apply kit="middle">
             <cuboid name="middle" min="3,1,-1" max="1,2,-3" />
         </apply>
-        <apply block="deny-all">
+        <apply block="deny-all" message="No stealing!">
             <rectangle min="oo,oo" max="-oo,-oo" />
         </apply>
     </regions>
