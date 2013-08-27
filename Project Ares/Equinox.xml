@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<map proto="1.3.0">
+<name>Equinox</name>
+<version>1.0.1</version>
+<objective>Control the center point.</objective>
+<authors>
+    <author>nixter1029</author>
+    <author>LuigiMaster49</author>
+</authors>
+<contributors>
+    <contributor contribution="Help Building">Stealth5061</contributor>
+    <contributor contribution="Block Glitching">diamond22</contributor>
+</contributors>
+<teams>
+    <team color="dark red" max="20">Red Team</team>
+    <team color="blue" max="20">Blue Team</team>
+</teams>
+<spawns>
+    <spawns kit="red" team="red">
+        <spawn yaw="135">
+            <cylinder base="69.5,24,11.5" radius="4" height="0"/>
+        </spawn>
+        <spawn yaw="45">
+            <cylinder base="69.5,24,-10.5" radius="4" height="0"/>
+        </spawn>
+    </spawns>
+    <spawns kit="blue" team="blue">
+        <spawn yaw="-135">
+            <cylinder base="-68.5,24,11.5" radius="4" height="0"/>
+        </spawn>
+        <spawn yaw="-45">
+            <cylinder base="-68.5,24,-10.5" radius="4" height="0"/>
+        </spawn>
+    </spawns>
+    <default yaw="90">
+        <cylinder base="0,56,0" radius="1" height="0"/>
+    </default>
+</spawns>
+<kits>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1" wnchantment="arrow damage:1">bow</item>
+        <item slot="28" amount="16">arrow</item>
+        <item slot="2" amount="16">cooked beef</item>
+        <item slot="3" amount="1">golden apple</item>
+        <potion duration="5" amplifier="1">heal</potion>
+        <potion duration="5" amplifier="4">damage resistance</potion>
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet color="cd0000">leather helmet</helmet>
+        <chestplate color="cd0000">leather chestplate</chestplate>
+        <leggings color="cd0000">leather leggings</leggings>
+        <boots color="cd0000" enchantment="protection fall:1">leather boots</boots>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <helmet color="0066cc">leather helmet</helmet>
+        <chestplate color="0066cc">leather chestplate</chestplate>
+        <leggings color="0066cc">leather leggings</leggings>
+        <boots color="0066cc" enchantment="protection fall:1">leather boots</boots>
+    </kit>
+</kits>
+<regions>
+    <apply block="deny-all">
+        <rectangle name="playable" min="-oo,-oo" max="oo,oo"/>
+    </apply>
+    <apply velocity="-2,1.3,0"><cuboid min="-31,16,-2" max="-26,17,3"/></apply>
+    <apply velocity="2,1.3,0"><cuboid min="27,16,-2" max="32,17,2"/></apply>
+</regions>
+<time result="objectives">15m</time>
+<king>
+    <hills>
+        <hill name="Hill" capture-time="1m" type="variable" ratio="1">
+            <capture><cuboid min="-5,32,-5" max="6,33,6"/></capture>
+            <progress><cuboid min="-5,31,-5" max="6,31,6"/></progress>
+            <captured><cuboid min="-5,39,-5" max="6,39,6"/></captured>
+        </hill>
+    </hills>
+    <wins>
+        <win team="red">
+            <hill>Hill</hill>
+        </win>
+        <win team="blue">
+            <hill>Hill</hill>
+        </win>
+    </wins>
+</king>
+<timelock>on</timelock>
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>bow</tool>
+</toolrepair>
+<itemremove>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
+    <item>cooked beef</item>
+</itemremove>
+</map>
