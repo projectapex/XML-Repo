@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<map proto="1.3.0">
+<name>Desert Cataract</name>
+<version>1.0</version>
+<objective>Destroy enemy team's obsidian monument!</objective>
+<authors>
+    <author>nixter1029</author>
+    <author>ieatboulders2</author>
+</authors>
+<contributors>
+    <contributor>Ben_The_Conquer</contributor>
+</contributors>
+<rules>
+	<rule>Don't block the enemy team's spawn.</rule>
+</rules>
+<teams>
+    <team color="blue" max="16">Blue Team</team>
+    <team color="dark red" max="16">Red Team</team>
+</teams>
+<timelock>on</timelock>
+<spawns>
+    <spawns>
+        <spawn team="blue" kit="blue" yaw="-90">
+            <cylinder base="-102.5,9,0.5" radius="1" height="0"/>
+        </spawn>/>
+        </spawn>
+        <spawn team="red" kit="red" yaw="90">
+            <cylinder base="103.5,9,0.5" radius="1" height="0"/>
+        </spawn>
+    </spawns>
+    <default yaw="180">
+        <cylinder base="0.5,33,1.5" radius="2" height="0"/>
+    </default>
+</spawns>
+<kits>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1" enchantment="arrow infinite:1">bow</item>
+        <item slot="2">diamond pickaxe</item>
+        <item slot="3" enchantment="dig speed:2">stone axe</item>
+        <item slot="4" amount="64">sandstone</item>
+        <item slot="5" amount="32">bread</item> 
+        <item slot="6">golden apple</item>
+        <item slot="28">arrow</item>
+        <potion duration="5">heal</potion>
+        <potion duration="10">damage resistance</potion>
+    </kit>
+    <kit name="red" parents="spawn">
+        <helmet color="993333">leather helmet</helmet>
+        <chestplate color="993333">leather chestplate</chestplate>
+        <leggings>chain leggings</leggings>
+        <boots color="993333"> leather boots</boots>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <helmet color="6699d8">leather helmet</helmet>
+        <chestplate color="6699d8">leather chestplate</chestplate>
+        <leggings>chain leggings</leggings>
+        <boots color="6699d8"> leather boots</boots>
+    </kit>
+</kits>
+<filters>
+    <filter name="only-blue" parents="deny-players deny-world">
+        <allow><team>blue</team></allow>
+    </filter>
+    <filter name="only-red" parents="deny-players deny-world">
+        <allow><team>red</team></allow>
+    </filter>
+</filters>
+<regions>
+    <!-- Main area -->
+    <apply block="deny-all" message="You may not build outside of the map!">
+        <negative name="playable-inverse">
+            <rectangle min="117,49" max="-116,-48"/>
+        </negative>
+    </apply>
+    <!-- Blue spawn protection -->
+    <apply block="deny-all" enter="only-blue">
+        <cuboid name="blue-protection1" min="-96,8,9" max="-113,16,-10"/>
+    </apply>
+    <!-- Red spawn protection -->
+    <apply block="deny-all" enter="only-red">
+        <cuboid name="red-protection1" min="113,8,10" max="96,16,-9"/>
+    </apply>
+</regions>
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>bow</tool>
+    <tool>diamond pickaxe</tool>
+    <tool>stone axe</tool>
+</toolrepair>
+<itemremove>
+    <item>obsidian</item>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>chain leggins</item>
+    <item>leather pants</item>
+    <item>bread</item>
+</itemremove>
+<destroyables materials="obsidian">
+    <!---Blue team monument -->
+    <destroyable name="Monument" owner="blue">
+        <cuboid name="blue-monument" min="-34,16,0" max="-34,15,0"/>
+    </destroyable>
+    <!---Red team monument -->
+    <destroyable name="Monument" owner="red">
+        <cuboid name="red-monument" min="34,16,0" max="34,15,0"/>
+    </destroyable>
+</destroyables>
+</map>
