@@ -40,11 +40,11 @@ Try to separate your description into four different sections:
 
 1.  **Basic Information**
 
-- Map name
-- Link to download
-- Link to forum post
-- Pictures
-- Gamemode
+    - Map name
+    - Link to download
+    - Link to forum post
+    - Pictures
+    - Gamemode
 
 2.  **Authors**
 
