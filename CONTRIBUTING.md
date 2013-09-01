@@ -38,24 +38,34 @@ Provide a brief summary of the map. Your title should allow users browsing the r
 
 Try to separate your description into four different sections:
 
-1.  **Basic Information**
+**Basic Information**
 
+```
 - Map name
 - Link to download
 - Link to forum post
 - Pictures
 - Gamemode
+```
 
-2.  **Authors**
+**Authors**
 
     Who made the map? Include any relevant contributors.
     
-3.  **Map Specific XML Settings**
+**Map Specific XML Settings**
     
     What special regions need to be protected, should TNT block damage be disabled, Etc...
 
-4.  **Extra Information**
+**Extra Information**
 
-    Information that doesn't necessarily fit into any other sections. Common examples are attachments, images, or disclaimers.
+    Information that doesn't necessarily fit into any other sections. 
+    Common examples are attachments, images, or disclaimers.
 
-  [Issue Tracker]: https://github.com/projectapex/XML-Repo/issues/new
+[Issue Tracker]: https://github.com/projectapex/XML-Repo/issues/new
+  
+## Output
+
+Maps written here will typically have an extra contributor added.
+```xml
+<contributor contribution="XML Repo">ProjectApex</contributor>
+```
