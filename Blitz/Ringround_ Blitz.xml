@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<map proto="1.3.0">
+    <name>Ringround</name>
+    <version>1.0</version>
+    <objective>Eliminate all opposing players.</objective>
+    <authors>
+        <author>Tywnis</author>
+    </authors>
+    <contributors>
+        <contributor contribution="Metadata/Packaging">nixter1029</contributor>
+    </contributors>
+    <rage/>
+    <blitz> 
+        <time>10m</time>
+        <lives>1</lives>
+        <broadcastLives>false</broadcastLives>
+        <title>Blitz</title>
+    </blitz>
+    <teams>
+       <team color="dark red" max="16" max-overfill="20">Red Team</team>
+       <team color="dark green" max="16" max-overfill="20">Green Team</team>
+    </teams>
+    <kits>
+        <kit name="spawn">
+            <item slot="0" enchantment="damage all:10" lore="§91-Hit Kill!">stone sword</item>
+            <item slot="1" enchantment="arrow damage:10" lore="§91-Shot Kill!">bow</item>
+            <item slot="2" amount="1">arrow</item>
+            <item slot="3" amount="32">apple</item>
+            <helmet enchantment="protection explosions:4">iron helmet</helmet>
+            <leggings>iron leggings</leggings>
+            <potion duration="5" amplifier="1">heal</potion>
+        </kit>
+        <kit name="red" parents="spawn">
+            <chestplate color="993333">leather chestplate</chestplate>
+            <boots color="993333">leather boots</boots>
+        </kit>
+        <kit name="green" parents="spawn">
+            <chestplate color="667f33">leather chestplate</chestplate>
+            <boots color="667f33">leather boots</boots>
+        </kit>
+    </kits>
+    <killreward>
+        <item>arrow</item>
+    </killreward>
+    <toolrepair>
+        <tool>stone sword</tool>
+        <tool>bow</tool>
+    </toolrepair>
+    <itemremove>
+        <item>apple</item>
+        <item>iron helmet</item>
+        <item>leather chestplate</item>
+        <item>iron leggings</item>
+        <item>leather boots</item>
+        <item>367</item>
+    </itemremove>
+    <tnt>
+        <instantignite>on</instantignite>
+        <blockdamage>off</blockdamage>
+    </tnt>
+    <mobs>
+        <filter parents="deny-all">
+            <allow>
+                <mob>zombie</mob>
+                <spawn>spawner</spawn>
+            </allow>
+        </filter>
+    </mobs>
+    <difficulty>1</difficulty>
+    <regions>
+        <apply block="deny-all">
+            <rectangle name="main-area" min="-39,40" max="40,-39"/>
+        </apply>
+    </regions>
+    <playable>
+        <region name="main-area"/>
+    </playable>
+    <spawns>
+        <spawns team="red" kit="red">
+            <spawn yaw="45">
+                <cuboid min="26,7,26" max="25,7,27"/>
+            </spawn>
+            <spawn yaw="-135">
+                <cuboid min="26,7,26" max="27,7,25"/>
+            </spawn>
+        </spawns>
+        <spawns team="green" kit="green">
+            <spawn yaw="45">
+                <cuboid min="-26,7,-26" max="-25,7,-27"/>
+            </spawn>
+            <spawn yaw="-135">
+                <cuboid min="-26,7,-26" max="-27,7,-25"/>
+            </spawn>
+        </spawns>
+        <default yaw="-135">
+            <cuboid min="-36,46,36" max="-38,46,38"/>
+        </default>
+    </spawns>
+</map>
