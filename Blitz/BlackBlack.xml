@@ -17,11 +17,11 @@
         <team color="red" max="5">Red Team</team>
         <team color="purple" max="5">Purple Team Team</team>
         <team color="dark blue" max="5">Blue Team</team>
-        <team color="orange" max="5">Orange Team</team>
+        <team color="gold" max="5">Orange Team</team>
         <team color="blue" max="5">Light Blue Team</team>
-        <team color="dark green" max="5">Green Team</team>
+        <team color="green" max="5">Green Team</team>
         <team color="magenta" max="5">Magenta Team</team>
-        <team color="light green" max="5">Lime Green Team</team>
+        <team color="lime" max="5">Lime Green Team</team>
     </teams>
     <blitz>
         <time>5m</time>
